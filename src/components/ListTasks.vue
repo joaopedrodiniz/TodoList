@@ -230,18 +230,19 @@ export default defineComponent({
   input[type=checkbox] {
   position: relative;
   cursor: pointer;
+  display: flex;
+  align-items: center;
 }
 
 input[type=checkbox]:before {
   content: "";
   display: block;
   position: absolute;
-  width: 1.2rem;
-  height: 1.2rem;
-  bottom: -3px;
-  right: -0.2rem;
+  width: 1rem;
+  height: 1rem;
+  right: -2px;
   background-color: #353535;
-  outline: 1px solid #41B883;
+  border: 1px solid #41B883;
   border-radius: 1rem;
 }
 
@@ -249,14 +250,13 @@ input[type=checkbox]:checked:after {
   content: " ✓ ";
   display: flex;
   justify-content: center;
-  width: 1.2rem;
-  height: 1.2rem;
+  width: 1rem;
+  height: 1rem;
   position: absolute;
   background-color: #41B883;
   border-radius: 1rem;
   color: white;
-  right: -0.2rem;
-  bottom: -3px;
+  right: -1px;
 }
 
 .contentTask::-webkit-scrollbar {
