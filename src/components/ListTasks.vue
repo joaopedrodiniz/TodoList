@@ -30,8 +30,8 @@
           </svg>
         </button>
       </li>
+      <h2 class="emptyTask" v-if="listTasks.length === 0">A lista de tarefas está vazia</h2>
     </div>  
-    <h2 class="emptyTask" v-if="listTasks.length === 0">A lista de tarefas está vazia</h2>
   </ul>
   
 </template>
@@ -157,7 +157,8 @@ export default defineComponent({
     gap: 1rem;
     overflow-y: auto;
     height: 26rem;
-    padding-right: 0.2rem
+    padding-right: 0.2rem;
+    width: 100%;
   }
 
   .count {
@@ -185,7 +186,6 @@ export default defineComponent({
     display: flex;
     justify-content: flex-end;
   }
-
   .listTasks li {
     display: flex;
     align-items: center;
