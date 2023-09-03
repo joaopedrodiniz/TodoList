@@ -238,6 +238,7 @@ input[type=checkbox]:before {
   position: absolute;
   width: 1.2rem;
   height: 1.2rem;
+  bottom: -3px;
   right: -0.2rem;
   background-color: #353535;
   outline: 1px solid #41B883;
@@ -255,6 +256,7 @@ input[type=checkbox]:checked:after {
   border-radius: 1rem;
   color: white;
   right: -0.2rem;
+  bottom: -3px;
 }
 
 .contentTask::-webkit-scrollbar {
